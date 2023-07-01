@@ -99,8 +99,8 @@
             <span class="text-primary">Rahim</span>
           </h1>
           <div class="subheading mb-5">
-            Tejgaon · Dhaka . Bangladesh, CO 1208 · (+880) 1824-442479 ·
-            <a href="mailto:name@email.com">ad.rahim.cse@gmail.com</a>
+            Tejgaon · Dhaka, Bangladesh, CO 1208 <br>(+880) 1824-442479 <br>
+            <a href="mailto:name@email.com" id="email">ad.rahim.cse@gmail.com</a>
           </div>
           <p class="mb-5">
             Passionate computer science engineering student with a love for
@@ -114,7 +114,7 @@
               <a href="http://facebook.com/ad.rahim62" target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-facebook fa-stack-1x fa-inverse"> </i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse" title="Facebook"> </i>
                 </span>
               </a>
             </li>
@@ -122,18 +122,18 @@
               <a href="#popup" onclick="openPopup()">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse" title="Twitter"></i>
                 </span>
               </a>
             </li>
             <li class="list-inline-item">
               <a
-                href="https://www.linkedin.com/in/abdur-rahim-6b6bb2216/"
+                href="https://www.linkedin.com/in/abdur-rahim-austcse019/"
                 target="_blank"
               >
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse" title="Linkedin"></i>
                 </span>
               </a>
             </li>
@@ -141,7 +141,7 @@
               <a href="https://github.com/Rahim-aust" target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse" title="Github"></i>
                 </span>
               </a>
             </li>
@@ -266,34 +266,34 @@
           <div class="subheading mb-3">Programming Languages &amp; Tools</div>
           <ul class="list-inline list-icons">
             <li class="list-inline-item">
-              <i class="devicons devicons-html5"></i>
+              <i class="devicons devicons-html5" title="HTML"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-css3"></i>
+              <i class="devicons devicons-css3" title="CSS"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-javascript"></i>
+              <i class="devicons devicons-javascript" title="JavaScript"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-python"></i>
+              <i class="devicons devicons-python" title="Python"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-firebase"></i>
+              <i class="devicons devicons-firebase" title="Firebase"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-android"></i>
+              <i class="devicons devicons-android" title="Android Studio"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-bootstrap"></i>
+              <i class="devicons devicons-bootstrap" title="Bootstrap"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-database"></i>
+              <i class="devicons devicons-database" title="Databse"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-github_full"></i>
+              <i class="devicons devicons-github_full" title="Github"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-java"></i>
+              <i class="devicons devicons-java" title="Java"></i>
             </li>
           </ul>
 
@@ -388,7 +388,12 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
+
+    <!-- Popup window create -->
     <script>
+      var email = document.getElementById("email");
+      email.style.textTransform='none';
+      
       function openPopup() {
       // Open the popup window
       var popup = window.open("", "Popup", "width=400,height=300");
